@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\documentclass[letterpaper]{style-ru} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+
+
+\cvname{Руслан Сунгатуллин} % Your name
+\cvjobtitle{Data Scientist} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Москва, Россия}
+\cvemail{ruslan.sungatullin.g@gmail.com} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+7(977)-932-75-36}
+\cvsite{github.com/sunruslan}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 Education
+%----------------------------------------------------------------------------------------
+
+\Education{Московский физико-технический институт\\Факультет инноваций и высоких технологий\\Прикладная математика и физика\\2016 - 2020 | Средний балл: 4.6/5} % To have no Education section, just remove all the text and leave \Education{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{\textbf{C++:} c++14, stl, boost, gtest
+\newline \textbf{Python:} pytorch, lightgbm, xgboost, sklearn, catboost, matplotlib, plotly, autokeras, keras
+\newline \textbf{Прочее:} git, docker, sql, R, cmake, AWS, PostgreSQL, hadoop}
+\qualities{Быстрая обучаемость, ответственность, инициативность}
+\hobbies{Хоккей, футбол, плавание, бег, чтение}
+\activities{Куратор ФИВТ, организатор множества олимпиад МФТИ, организатор Дней Физика}
+\communities{Open Data Science}
+
+
+\ExtraCurricular{}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Опыт работы и стажировки}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{10.2019-н.в}{Исследователь}{Лаборатория цифровизации бизнеса, Москва}{Разрабатываю систему по оптимизации нейронных сетей. Использую градиентные методы поиска архитектур (DARTS, NAO) и байесовский подход Auto-Keras.}
+	\twentyitem{02-09.2019}{Стажер}{Касперский, R\&D,  Москва}{Разрабатывал инструмент конфигурации базы данных для Kaspersky Password Manager и приложение по трекингу рабочего времени сотрудников. Был вовлечен в процесс написания авто-тестов для приложений Password Manager и Safe Kids.}
+	\twentyitem{07-08.2018}{Стажер}{Тинькофф Банк, Москва}{Занимался разработкой утилиты автоматизации процесса установки приложений на IBM Integration Bus.}	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Учебные проекты}
+
+\begin{twenty} % Environment for a short list with no descriptions
+	\twentyitem{февраль 2019}{Дорисовка улыбок}{}{На размеченном датасете лиц был обучен Convolutional VAE, после чего в латентном пространстве выполнялась дорисовка улыбок.}
+	\twentyitem{январь 2020}{\href{https://www.kaggle.com/c/simpsons4/}{Journey To Springfield}}{}{Задача классификации изображений с использованием transfer leanring. Использовал архитектуру ResNet-18.}
+	\twentyitem{ноябрь 2019}{\href{https://www.kaggle.com/c/scoring-case}{Credit Scoring Competition}}{}{Первое место в in-class соревновании с использованием lightgbm и тщательной предобработкой данных.}
+	\twentyitem{октябрь 2019}{\href{https://www.kaggle.com/c/understanding_cloud_organization}{Understanding cloud organisation}}{}{Задача сегментации изображений сделанных со спутника. Использована архитектура U-Net. Большое внимание уделено аугментации изображений.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Курсы}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem{МФТИ}{Продвинутое Машинное Обучение (Reinforcement Learning, Computer Vision, Natural Language Processing), Теория Вероятности, Методы Оптимизации, Статистика, Случайные Процессы, Дискретные Структуры, Алгоритмы и Структуры Данных, Паттерны Программирования, Базы данных, Проектирование Высоконагруженных Систем}{}{}
+	\twentyitem{Дополнительные}{Нейронные сети}{Технотрек MAIL.RU}{Основы нейронных сетей, функции активизации, методы борьбы с переобучением, модификации градиентного спуска, CNN, ResNet, VGG, Network in Network, U-Net, R-CNN, Fast R-CNN, Faster R-CNN, LSTM, GRU, Word2Vec, GAN, WGAN, CGAN, VAE}
+	\twentyitem{}{Deep Learning School}{ФПМИ}{Основы нейронных сетей, CNN, основные архитектуры, VAE, object detection, style transfer}
+	\twentyitem{}{Data Science in Consulting}{McKinsey}{Решение бизнес кейсов применяя машинное обучение: banking (оптимизация сети банков), b2b (задача ценоообразования), telecom (предсказание показателя ARPU)}
+	\twentyitem{}{Количестваенная аналитика}{Центр Математических Финансов}{Финансовые временные ряды, классическое машинное обучение, финансовые инструменты, количественное моделирование}
+	\twentyitem{Онлайн}{Введение в машинное обучение (Константин Воронциов, Яндекс), Open Machine Learning Course (Open Data Science), Нейронные сети и компьютерное зрение (Samsung Research Russia), Программирование на C++, Алгоритмы и структуры данных (оба CSC)}{}{}
+	
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
